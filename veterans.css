@@ -1,0 +1,131 @@
+/* Reset some default styles */
+body, h2, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7f9;
+    color: #333;
+    line-height: 1.7;
+    padding: 40px;
+}
+
+h2 {
+    color: #2a2a2a;
+    border-bottom: 3px solid #0073e6;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    font-size: 24px;
+}
+
+ul {
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+li > strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #0073e6;
+    font-weight: 600;
+}
+
+a {
+    color: #0073e6;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #005bb5;
+}
+
+ul > li > ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+ul > li > ul > li {
+    margin-bottom: 10px;
+}
+
+ul > li > ul > li > em {
+    color: #555;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+/* Add a soft box shadow for a touch of depth */
+ul {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.resources-button {
+    display: inline-block;
+    background-color: #007BFF; /* Blue color */
+    color: #FFFFFF; /* White text color */
+    padding: 10px 20px; /* Vertical and horizontal padding */
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px 0; /* Top and bottom margin */
+    cursor: pointer; /* Hand pointer when hovered over the button */
+    transition: background-color 0.3s; /* Smooth transition effect */
+}
+
+.resources-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    color: #ffffff7d; /* White text color */
+}
+
+/* Responsive Design for Tablets and Mobile Devices */
+
+/* Tablets: screens roughly 768px and up */
+@media screen and (max-width: 1024px) {
+    body {
+        padding: 30px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    ul {
+        padding: 15px;
+    }
+}
+
+/* Mobile: screens up to 767px */
+@media screen and (max-width: 767px) {
+    body {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .resources-button {
+        width: 100%; /* Make button full width */
+        text-align: center;
+    }
+
+    ul {
+        padding: 10px;
+    }
+
+    ul > li > ul {
+        padding-left: 15px;
+    }
+}
